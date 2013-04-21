@@ -76,7 +76,9 @@ gagnée lorsque la somme de ces deux compteurs dépasse 200.
 2. Ensuite, on mélange les cartes Héros et chacun pioche une carte 
    Héros qui le représente. Les cartes héros ont un nom et une
    illustration (purement cosmétiques) et un attribut principal, 
-   qui peut être la **Force**, la **Dextérité** ou l'**Esprit**.
+   qui peut être la <span class="label label-error">Force</span>, 
+   la <span class="label label-success">Dextérité</span> ou 
+   l'<span class="label label-info">Esprit</span>.
 
    Chaque joueur place sa carte Héros devant lui, face visible.  
    
@@ -88,7 +90,9 @@ gagnée lorsque la somme de ces deux compteurs dépasse 200.
 
    Les Héros ont une limite de deux cartes pouvoir chacun, mais
    certaines cartes pouvoir sont associées à un attribut 
-   (**Force**, **Dextérité** ou **Esprit**) et ne comptent pas 
+   (<span class="label label-error">Force</span>, 
+   <span class="label label-success">Dextérité</span> ou 
+   <span class="label label-info">Esprit</span>) et ne comptent pas 
    dans cette limite si elles sont associées au même attribut 
    que le Héros.
 
@@ -100,24 +104,32 @@ gagnée lorsque la somme de ces deux compteurs dépasse 200.
    nombre de pouvoirs du Héros qui sont associés à cet attribut. 
 
    Par exemple, si le [Capitaine Justice](#capitaine-justice) 
-   (Dextérité) sélectionne les pouvoirs [Riche 
-   Héritier](#riche-heritier]), [Indestructible](#indestructible) 
-   (Force), [Ninja](#ninja) (Dextérité) et 
-   [Vitesse](#vitesse) (Dextérité), alors ses attributs 
-   réels seront **Force 2**, **Dextérité 4**, **Esprit 1**.
+   (<span class="label label-success">Dextérité</span>) sélectionne 
+   les pouvoirs [Riche Héritier](#riche-heritier]), 
+   [Indestructible](#indestructible) 
+   (<span class="label label-error">Force</span>), 
+   [Ninja](#ninja) 
+   (<span class="label label-success">Dextérité</span>) et 
+   [Vitesse](#vitesse) 
+   (<span class="label label-success">Dextérité</span>), 
+   alors ses attributs réels seront 
+   <span class="label label-error">Force **2**</span>, 
+   <span class="label label-success">Dextérité **4**</span>, 
+   <span class="label label-info">Esprit **1**</span>.
 
    On déduit de ces caractéristiques des valeurs supplémentaires : 
    <a name="stats"></a>
 
-       Vie = 3 × Force
-       Attaque = Force + Dextérité
-       Défense =  Dextérité
-       Discrétion = Dextérité + 1
-       Perspicacité = Esprit
+   - Vie = 3 × <span class="label label-error">Force</span>
+   - Attaque = <span class="label label-error">Force</span> + <span class="label label-success">Dextérité</span>
+   - Défense = <span class="label label-success">Dextérité</span>
+   - Discrétion = <span class="label label-success">Dextérité</span> + 1
+   - Perspicacité = <span class="label label-info">Esprit</span>
 
 5. On calcule le niveau de _Secret_ du Mal. <a name="secret"></a>
    Il est au départ égal à 30 pour 5 Héros, 26 pour 4 ou 22 pour 
-   3, et on lui retire la somme des attributs Esprit des Héros.         
+   3, et on lui retire la somme des attributs 
+   <span class="label label-info">Esprit</span> des Héros.         
 
 6. En secret, le Mal pioche trois cartes Génie du Mal et en garde 
    une qui sera son identité. Il parcourt le paquet de cartes 
@@ -237,7 +249,7 @@ Si les Légions des Ténèbres [agissent ouvertement](#agissent-ouvertement), al
 n’importe quel Héros peut utiliser cette action quel que 
 soit le lieu où il se trouve.
 
-Le héros utilise son [Attaque](#stats) (Force + Dextérité) 
+Le héros utilise son [Attaque](#stats) (<span class="label label-error">Force</span> + <span class="label label-success">Dextérité</span>) 
 pour réduire le nombre des Légions des Ténèbres. Chaque membre 
 des Légions possède deux points de vie. 
 
@@ -278,9 +290,11 @@ Un combat implique tous les Héros et Larbins présents (ainsi
 que le Génie du Mal, lorsque le combat a lieu dans sa tanière). 
 Il se déroule en plusieurs étapes : 
 
-1. _Tout participant dont la [discrétion](#stats) (Dextérité) 
+1. Tout participant dont la [discrétion](#stats) 
+  (<span class="label label-success">Dextérité</span>) 
    est strictement supérieure à la [perception](#stats) 
-   (Esprit + 1) de tous ses adversaires est _furtif_. 
+   (<span class="label label-info">Esprit</span> + 1) 
+   de tous ses adversaires est _furtif_. 
    <a name="furtif"></a>
    Ces participants ne peuvent pas être touchés par les autres.
    
@@ -290,10 +304,10 @@ Il se déroule en plusieurs étapes :
    Larbin. 
 
 4. Chaque participant inflige des dégâts égaux à son 
-   [Attaque](#stats) (Force + Dextérité) moins la 
-   [Défense](#stats) (Dextérité) de sa cible. Si la somme des 
+   [Attaque](#stats) (<span class="label label-error">Force</span> + <span class="label label-success">Dextérité</span>) moins la 
+   [Défense](#stats) (<span class="label label-success">Dextérité</span>) de sa cible. Si la somme des 
    dégâts reçus par une cible dépasse sa [Vie](#stats) 
-   (3 × Force), elle est vaincue. 
+   (3 × <span class="label label-error">Force</span>), elle est vaincue. 
    
 5. Le Mal peut décider d’utiliser les Légions des Ténèbres 
    pour servir de chair à canon (auquel cas, elles [agissent 
@@ -334,8 +348,8 @@ Chaque Plan peut être déjoué en remplissant des conditions
 indiquées sur la carte. Si ces conditions ne sont pas 
 remplies, il ne se passe rien. Par exemple, 
 [Virus Mutant](#virus-mutant) a pour condition que le Héros 
-qui veut le déjouer doit avoir un [Mental](#stats) supérieur 
-ou égal à 3.
+qui veut le déjouer doit avoir un <span class="label label-info">Esprit</span>
+supérieur ou égal à 3.
 
 Si le Projet a été déjoué, le Lieu où il se trouve est défaussé. 
 Les Héros présents sur le Lieu retournent automatiquement à 
@@ -473,7 +487,7 @@ au bon moment pour qu’elle prenne effet.
 #### Seth <span class=muted>(Le Dieu Egyptien)</span> 
 <span class="label label-error">Force **6**</span>
 <span class="label label-success">Dextérité **3**</span>  
-<span class="label label-info">Mental **3**</span>
+<span class="label label-info">Esprit **3**</span>
 
 Les Forces des Ténèbres de Seth sont composées de Momies. 
 Chaque fois qu’un Héros arrive sur un Lieu (autre que la 
@@ -486,15 +500,15 @@ Danger face cachée, Seth gagne 3 [Points de Chaos](#points-de-chaos).
 Ce pouvoir ne s’applique qu’une fois par tour.
 
 Les Héros utilisent <span class="label label-success">Dextérité</span> 
-+ <span class="label label-info">Mental</span> pour calculer leur [Attaque](#stats) 
-contre Seth, et <span class="label label-info">Mental</span> 
++ <span class="label label-info">Esprit</span> pour calculer leur [Attaque](#stats) 
+contre Seth, et <span class="label label-info">Esprit</span> 
 pour calculer leur [Défense](#stats) contre lui. 
 
 <a name="docteur-desastre"></a>
 #### Docteur Désastre <span class=muted>(Le Scientifique Fou)</span>
 <span class="label label-error">Force **1**</span>
 <span class="label label-success">Dextérité **3**</span>  
-<span class="label label-info">Mental **8**</span>
+<span class="label label-info">Esprit **8**</span>
 
 Les Forces des Ténèbres du Docteur 
 Désastre sont des Robots Tueurs. Ils disposent de quatre 
@@ -512,7 +526,7 @@ pour mélanger sa défausse et sa pioche.
 #### Maurizio Ponzi <span class=muted>(Le Parrain)</a>
 <span class="label label-error">Force **4**</span>
 <span class="label label-success">Dextérité **4**</span>  
-<span class="label label-info">Mental **4**</span>
+<span class="label label-info">Esprit **4**</span>
 
 Les Forces des Ténèbres du Parrain sont les Mafieux. 
 Il peut à tout moment choisir de transformer tout ou 
@@ -533,7 +547,7 @@ et passe son prochain tour.
 #### Kal-Zoroth <span class=muted>(L’Aberration Astrale)</span>
 <span class="label label-error">Force **10**</span>
 <span class="label label-success">Dextérité **1**</span>  
-<span class="label label-info">Mental **1**</span>
+<span class="label label-info">Esprit **1**</span>
 
 Les Forces des Ténèbres de Kal-Zoroth sont des abominations. 
 Chaque fois qu’un Héros utilise un de ses pouvoirs actifs, 
@@ -543,7 +557,7 @@ chair à canon pour se protéger elle-même, mais elle peut
 protéger ses Larbins. 
 
 Lorsque l’identité de Kal-Zoroth est révélée, chaque Héros 
-voit son <span class="label label-info">Mental</span> réduit 
+voit son <span class="label label-info">Esprit</span> réduit 
 de un point. 
 
 Si le joueur d’un Héros rit à n’importe quel moment de la 
@@ -555,7 +569,7 @@ et par tour.
 #### Vampyr <span class=muted>(Le Mort-Vivant)</span>
 <span class="label label-error">Force **1**</span>
 <span class="label label-success">Dextérité **1**</span>  
-<span class="label label-info">Mental **1**</span>
+<span class="label label-info">Esprit **1**</span>
 
 Les Forces des Ténèbres de Kal-Zoroth sont des zombies. 
 À chaque tour de Vampyr, si les Légions des Ténèbres 
@@ -577,7 +591,7 @@ supplémentaires.
 #### Matsumoto Tarou <span class=muted>(Le Grand Maître)</span>
 <span class="label label-error">Force **4**</span>
 <span class="label label-success">Dextérité **5**</span>  
-<span class="label label-info">Mental **3**</span>
+<span class="label label-info">Esprit **3**</span>
 
 Les Forces des Ténèbres de Tarou sont des Ninjas. Lorsqu’elles 
 [agissent dans l’ombre](#agissent-dans-l-ombre), elles 
@@ -598,19 +612,24 @@ servir de ses pouvoirs avant la fin de son prochain tour.
 #### MZX-1337 <span class=muted>(L’Intelligence Artificielle)</span>
 <span class="label label-error">Force **1**</span>
 <span class="label label-success">Dextérité **0**</span>  
-<span class="label label-info">Mental **12**</span>
+<span class="label label-info">Esprit **12**</span>
 
 Les Forces des Ténèbres de MZX sont des drones de combat 
 autonomes. Ils ne peuvent jamais agir dans l’ombre et n’ont 
-qu’un seul point de vie, mais sacrifier un seul drone suffit 
-à annuler tous les dégâts infligés à une cible. 
+qu’un seul point de vie, donc sont deux fois plus faciles à tuer
+et deux fois moins efficaces pour servir de chair à canon. En 
+revanche, sacrifier un seul drone suffit à annuler tous les dégâts 
+infligés à une cible par des sources dont 
+l'<span class="label label-info">Esprit</span> 
+est inférieur ou égal à 4. 
 
 Le dernier joueur à s’être servi d’un ordinateur ou d’un 
 téléphone portable se désigne. MZX crée un clone de ce 
 Héros, avec les mêmes Force et Dextérité (si les attributs 
 du Héros changent, ceux du clone changent aussi) mais avec 
-<span class="label label-info">Mental **12**</span>. Traitez 
+<span class="label label-info">Esprit **12**</span>. Traitez 
 ce clone comme un Larbin sans pouvoir spécial, qui n’est 
 présent sur aucun Lieu, mais qui participe à tous les combats 
-et ne peut jamais être vaincu.  
+impliquant au moins un autre Larbin, et ne peut jamais 
+être vaincu.  
 
