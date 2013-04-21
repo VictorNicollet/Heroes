@@ -120,11 +120,11 @@ gagnée lorsque la somme de ces deux compteurs dépasse 200.
    On déduit de ces caractéristiques des valeurs supplémentaires : 
    <a name="stats"></a>
 
-   - Vie = 3 × <span class="label label-error">Force</span>
-   - Attaque = <span class="label label-error">Force</span> + <span class="label label-success">Dextérité</span>
-   - Défense = <span class="label label-success">Dextérité</span>
-   - Discrétion = <span class="label label-success">Dextérité</span> + 1
-   - Perspicacité = <span class="label label-info">Esprit</span>
+    - Vie = 3 × <span class="label label-error">Force</span>
+    - Attaque = <span class="label label-error">Force</span> + <span class="label label-success">Dextérité</span>
+    - Défense = <span class="label label-success">Dextérité</span>
+    - Discrétion = <span class="label label-success">Dextérité</span> + 1
+    - Perspicacité = <span class="label label-info">Esprit</span>
 
 5. On calcule le niveau de _Secret_ du Mal. <a name="secret"></a>
    Il est au départ égal à 30 pour 5 Héros, 26 pour 4 ou 22 pour 
@@ -633,3 +633,87 @@ présent sur aucun Lieu, mais qui participe à tous les combats
 impliquant au moins un autre Larbin, et ne peut jamais 
 être vaincu.  
 
+## Pouvoirs des Héros
+
+### Pouvoirs Généraux
+
+<a name="regeneration"></a>
+#### Régénération
+
+_Passif_. Lorsque ce Héros est vaincu, il retourne à la 
+[Forteresse de la Justice](#forteresse-de-la-justice), 
+mais peut agir dès le prochain tour. 
+
+<a name="riche-heritier"></a>
+#### Riche Héritier
+
+_Actif_. Défaussez vos pouvoirs passifs, puis cherchez 
+un pouvoir passif dans le paquet de cartes Pouvoir. 
+
+<a name="invisibilite"></a>
+#### Invisibilité
+
+_Passif_. La [discrétion](#stats) de ce Héros est égale 
+à 2 × <span class="label label-success">Dextérité</span>.
+
+### Pouvoirs de Force
+
+<a name="indestructible"></a>
+#### Indestructible
+
+_Passif_. La [vie](#stats) de ce Héros est égale à 
+6 × <span class="label label-error">Force</span>.
+
+<a name="rage-berserk"></a>
+#### Rage Berserk
+
+_Actif_. Pendant le prochain combat de ce Héros, les 
+[Légions des Ténèbres](#legions-des-tenebres) ne peuvent pas 
+servir de chair à canon pour protéger les Larbins.  
+
+<a name="exosquelette"></a>
+#### Exosquelette
+
+_Passif_. La <span class="label label-error">Force</span> de
+ce personnage compte double pour les conditions de 
+destruction des Pièges et des Projets. 
+
+### Pouvoirs de Dextérité
+
+### Pouvoirs d'Esprit
+
+<a name="enqueteur"></a>
+#### Enquêteur
+
+_Actif_. Le Héros indique au Mal un Lieu face cachée. Si le Héros
+remplit les conditions pour s'y rendre, le Mal révèle le Lieu
+indiqué. Ne s'applique pas à la Tanière du Mal.
+
+<a name="teleportation"></a>
+#### Téléportation
+
+_Actif_. Les conditions pour se rendre sur un Lieu ne s'appliquent
+plus pendant la prochaine action [Se Déplacer](#se-deplacer) de
+ce Héros. Si des Larbins ou des Pièges étaient posés sur le Héros, 
+ils retournent dans la main du Mal. 
+
+<a name="telepathie"></a>
+#### Télépathie
+
+_Passif_. Le Mal doit révéler tous les Larbins face cachée posés
+sur ce Héros, ou sur un Lieu où ce Héros se trouve. Les Larbins 
+ne peuvent pas être _furtifs_ lorsqu'ils affrontent ce Héros.
+
+<a name="intelligence-surhumaine"></a>
+#### Intelligence Surhumaine
+
+_Passif_. L'<span class="label label-info">Esprit</span> de
+ce personnage compte double pour les conditions de 
+destruction des Pièges et des Projets.
+
+<a name="controle-mental"></a>
+#### Controle Mental
+
+_Passif_. Si les Légions des Ténèbres sont utilisées comme chair
+à canon au cours d'un combat, ce Héros peut également les utiliser
+comme chair à canon pour se protéger lui-même. 
